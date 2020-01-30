@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ra</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <artifactId>ra</artifactId>
+    </parent>
+
+    <groupId>com.ra.service</groupId>
+    <artifactId>ra-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ra-service</name>
+    <description>所有cloud 消费服务的父模块 </description>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>ra-auth</module>
+    </modules>
+
+</project>
