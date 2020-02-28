@@ -4,16 +4,22 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ra</groupId>
-        <version>0.0.1-SNAPSHOT</version>
         <artifactId>ra-service-api</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.ra.system</groupId>
-    <artifactId>ra-system</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ra-system</name>
-    <description>ra-system project for Spring Boot</description>
+    <artifactId>ra-system-api</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.ra</groupId>
+            <artifactId>ra-common-core</artifactId>
+            <version>${ra.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ra</groupId>
+            <artifactId>ra-common-swagger</artifactId>
+            <version>${ra.version}</version>
+        </dependency>
     </dependencies>
-    <packaging>pom</packaging>
+
 </project>

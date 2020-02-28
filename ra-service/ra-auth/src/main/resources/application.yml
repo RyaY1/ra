@@ -7,13 +7,11 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-  cloud:
   main:
     allow-bean-definition-overriding: true
 feign:
   hystrix:
     enabled: true
-
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:

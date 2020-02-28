@@ -4,22 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.ra.service</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.ra</groupId>
         <artifactId>ra-service</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <groupId>com.ra.auth</groupId>
     <artifactId>ra-auth</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ra-auth</name>
-
     <dependencies>
-        <!--配置中心客户端 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
         <!--eureka 客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -47,11 +37,19 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- 系统模块 -->
+        <dependency>
+            <groupId>com.ra</groupId>
+            <artifactId>ra-system-api</artifactId>
+            <version>${ra.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
 
         <!-- spring-boot-devtools -->
         <dependency>
@@ -60,15 +58,10 @@
             <optional>true</optional> <!-- 表示依赖不会传递 -->
         </dependency>
 
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.ra</groupId>
-            <artifactId>ra-service-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

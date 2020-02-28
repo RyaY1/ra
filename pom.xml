@@ -227,6 +227,7 @@
         <module>ra-eureka</module>
         <module>ra-service</module>
         <module>ra-service-api</module>
+        <module>ra-common</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -5,20 +5,17 @@
 
     <parent>
         <groupId>com.ra</groupId>
-        <version>0.0.1-SNAPSHOT</version>
         <artifactId>ra</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <groupId>com.ra.service</groupId>
     <artifactId>ra-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ra-service</name>
     <description>所有cloud 消费服务的父模块 </description>
 
     <packaging>pom</packaging>
-
+    <build/>
     <modules>
         <module>ra-auth</module>
+        <module>ra-system</module>
     </modules>
 
 </project>
